@@ -746,7 +746,8 @@ footer {
 }
 
 /* Arca GIF Container */
-.arca-gif-container {
+.arca-gif-container,
+.merecte-gif-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Aligns text to the left */
@@ -758,7 +759,8 @@ footer {
 }
 
 /* Arca GIF Box Styling (Gray Border) */
-.arca-gif-box {
+.arca-gif-box,
+.merecte-gif-box {
   width: 100%;
   border: 2px solid #ccc; /* Light gray border */
   padding: 10px;
@@ -766,30 +768,35 @@ footer {
   background-color: #fff; /* White background */
 }
 
-.arca-gif-box img {
+.arca-gif-box img,
+.merecte-gif-box img {
   width: 100%;
   height: auto;
   display: block; /* Ensures no extra space */
 }
 
 /* Text Below Arca GIF */
-.arca-gif-text {
+.arca-gif-text,
+.merecte-gif-text {
   font-size: 14px;
   color: #333;
   line-height: 1.5;
   margin-top: 10px; /* Space between GIF and text */
 }
 
-.arca-gif-text p {
+.arca-gif-text p,
+.merecte-gif-text p {
   margin: 0; /* Remove default margins */
 }
 
-.arca-gif-text p:first-child {
+.arca-gif-text p:first-child,
+.merecte-gif-text p:first-child {
   font-size: 12px; /* Smaller size for first line */
   color: #999; /* Light gray text */
 }
 
-.arca-gif-text p:nth-child(2) {
+.arca-gif-text p:nth-child(2),
+.merecte-gif-text p:nth-child(2) {
   font-size: 14px; /* Normal size for views and time */
   color: #000; /* Black text */
 }
@@ -1378,3 +1385,307 @@ footer {
   border-radius: 5px;
   object-fit: contain; /* Ensures the image stays within bounds */
 }
+
+/* Coolo Image Container */
+.image-container-coolo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff; /* White background */
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container-coolo .text-coolo {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.image-container-coolo .text-coolo strong {
+  color: blue;
+}
+
+.image-container-coolo .text-coolo a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.image-container-coolo .text-coolo a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.image-container-coolo .image-coolo img {
+  width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+/* Botas Image Container */
+.image-container-botas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff; /* White background */
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container-botas .text-botas {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.image-container-botas .text-botas strong {
+  color: blue;
+}
+
+.image-container-botas .text-botas a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.image-container-botas .text-botas a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.image-container-botas .image-botas img {
+  width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+/* Featured Videos Container */
+.featured-videos-container {
+  background-color: #fff;
+  width: 750px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Video Item */
+.video-item {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.video-item:last-child {
+  border-bottom: none; /* Remove border on last item */
+}
+
+.thumbnail {
+  width: 120px;
+  height: 90px;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.video-details h3 {
+  font-size: 14px;
+  color: #0066c0;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.tags, .meta, .views, .ratings {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.meta span, .views span {
+  color: red; /* Highlighted text */
+}
+
+.description {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.stars {
+  color: red;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+/* Links and Hover Effects */
+.video-details a {
+  color: #0066c0;
+  text-decoration: none;
+}
+
+.video-details a:hover {
+  text-decoration: underline;
+}
+
+/* Aerecto, Pruspecto, Evangile, Botella Containers Styling */
+.aerecto-image-container,
+.pruspecto-image-container,
+.lampar-image-container,
+.citerna-image-container{
+  display: flex;
+  align-items: flex-start; /* Align text and image at the top */
+  gap: 20px; /* Space between image and text */
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  margin: 20px auto; /* Space between containers */
+  max-width: 90%;
+}
+
+.aerecto-image-container img,
+.pruspecto-image-container img,
+.lampar-image-container img,
+.citerna-image-container img{
+  max-width: 200px; /* Fixed image width */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.aerecto-text-content,
+.pruspecto-text-content,
+.lampar-text-content,
+.citerna-text-content {
+  flex: 1; /* Allow text to take up remaining space */
+}
+
+.aerecto-text-content p,
+.pruspecto-text-content p,
+.lampar-text-content p,
+.citerna-text-content p{
+  margin: 0 0 8px; /* Spacing between text lines */
+}
+
+.aerecto-text-content span,
+.pruspecto-text-content span,
+.lampar-text-content span,
+.citerna-text-content span{
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
+.aerecto-text-content a,
+.pruspecto-text-content a,
+.lampar-text-content a,
+.citerna-text-content a{
+  color: blue;
+  text-decoration: underline;
+}
+
+.aerecto-text-content a:hover,
+.pruspecto-text-content a:hover,
+.lampar-text-content a:hover,
+.citerna-text-content a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* General Styling for Image Containers (Reusable) */
+.image-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 90%;
+  font-family: Arial, sans-serif;
+}
+
+/* Image Styling */
+.image-container img {
+  max-width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Text Content Styling */
+.image-container .archio-text,
+.image-container .velo-text {
+  flex: 1;
+}
+
+.image-container .archio-text p,
+.image-container .velo-text p {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.image-container .archio-text span,
+.image-container .velo-text span {
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
+.image-container .archio-text a,
+.image-container .velo-text a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.image-container .archio-text a:hover,
+.image-container .velo-text a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* Archio and Velo Specific Adjustments */
+.archio {
+  background-color: #f0f8ff; /* Light blue background for Archio */
+}
+
+.velo {
+  background-color: #fff5e6; /* Light orange background for Velo */
+}
+
