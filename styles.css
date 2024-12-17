@@ -1689,3 +1689,74 @@ footer {
   background-color: #fff5e6; /* Light orange background for Velo */
 }
 
+/* Thong Image Container */
+.image-container-thong {
+  background-color: #fff; /* White background */
+  border: 0px solid #ccc; /* Light gray border */
+  padding: 5px;
+  display: inline-block; /* Ensures proper size for container */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.image-container-thong img {
+  display: block;
+  width: 800px; /* Fixed image width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto 5px; /* Center and add space below */
+  border: 0px solid #fff; /* White border around the image */
+}
+
+.image-container-thong .image-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0066c0; /* Blue title */
+  margin-bottom: 5px;
+}
+
+.image-container-thong .image-details {
+  font-size: 10px;
+  color: #555; /* Gray text */
+  line-height: 1.4;
+}
+
+.image-container-thong .image-details .author {
+  color: #0066c0; /* Blue text for the author */
+}
+
+/* Ventri Image Container */
+.image-container-ventri {
+  background-color: #222; /* Dark gray background */
+  border: 1px solid #555; /* Slight border for separation */
+  padding: 10px;
+  max-width: 600px; /* Limit width */
+  margin: 20px auto; /* Center the container */
+  color: #ddd; /* Light gray text */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.image-container-ventri img {
+  display: block;
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #444; /* Border around the image */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.image-container-ventri .image-text {
+  text-align: left; /* Align text to the left */
+}
+
+.image-container-ventri .image-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* White title */
+  margin-bottom: 5px; /* Space below title */
+}
+
+.image-container-ventri .image-description {
+  font-size: 14px;
+  color
+}
