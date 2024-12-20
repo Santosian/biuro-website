@@ -47,6 +47,8 @@ body {
   border: 0px solid #e0e0e0; /* Subtle border around the section */
   margin-left: 140px;
 
+  
+
 }
 
 .custom-homepage-text h1 {
@@ -113,6 +115,8 @@ header {
   color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
+
+
 
 
 
@@ -308,80 +312,78 @@ body {
   left: 0; /* Fine-tunes horizontal position */
 }
 
-
-
-
-
-
-
-/* Specific Styling for terciario */
 .terciario {
-  display: flex; /* Ensures alignment between text and image */
-  align-items: flex-start; /* Align items at the top */
-  gap: 15px; /* Add spacing between elements */
-  max-width: 600px; /* Matches the width of the image container */
-  margin: 20px auto 0 0; /* Aligns the container */
-  padding: 15px; /* Adds internal spacing */
-  background-color: #f0eeef; /* Light background for contrast */
-  border: 0px solid #ccc; /* Subtle border for clarity */
-  font-family: 'Times New Roman', serif; /* Matches the font style */
+  display: flex; /* Side-by-side layout for image and text */
+  flex-direction: column; /* Stack elements vertically first */
+  align-items: flex-start; /* Align content at the top */
+  gap: 15px; /* Space between elements */
+  max-width: 709px; /* Container width */
+  margin: 60px auto; /* Center horizontally with spacing above and below */
+  padding: 15px; /* Inner spacing for the container */
+  background-color: #f0eeef; /* Light gray background */
+  border: 0px solid #ccc; /* Subtle border */
+  border-radius: 0px; /* Rounded corners */
+  font-family: 'Times New Roman', serif; /* Matching font style */
   color: #000; /* Text color */
-  position: relative; /* Enables fine alignment */
-  right: -310px; /* Aligns to the right of 'segundo' */
-  margin-top: 70px
-  
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transform: translateX(50px); /* Moves container 20px to the right */
+  /* OR */
+  transform: translateX(57px); /*
+}
+
+.terciario .title-container {
+  width: 100%; /* Title spans the full container width */
+  margin-bottom: 10px; /* Space below the title */
+  font-weight: bold; /* Highlight title */
+  color: #333; /* Slightly darker color */
 }
 
 .terciario img {
-  max-width: 300px; /* Adjust to your desired width */
-  width: 100%; /* Ensures responsiveness within the container */
-  height: auto; /* Maintains aspect ratio */
-  border: 1px solid #ccc; /* Optional: Add or adjust the border */
-  border-radius: 5px; /* Optional: Rounded corners */
-}
-
-.terciario p {
-  margin: 5px 0; /* Space between paragraphs */
-  line-height: 1.6; /* Improve text readability */
-  font-size: 16px; /* Match font size */
-}
-
-.terciario a {
-  color: #233b7b; /* Blue color for links */
-  text-decoration: underline;
-}
-
-.terciario a:hover {
-  text-decoration: none; /* Remove underline on hover */
-}
-
-.terciario .image-grid {
-  display: flex; /* Aligns images or keeps them stacked */
-  justify-content: start; /* Aligns to the left */
-  gap: 10px; /* Adds spacing between images (if applicable) */
-  margin: 10px 0 0 0; /* Adjust vertical spacing */
-  padding: 0; /* Removes extra padding */
-}
-
-.terciario .image-grid img {
-  width: 100%; /* Image takes full width of container */
+  max-width: 200px; /* Set fixed image width */
   height: auto; /* Maintain aspect ratio */
-  margin: 0; /* No extra margin */
-  border: 0px solid #ccc; /* Optional border */
-  
+  border: 1px solid #ccc; /* Thin border around the image */
+  border-radius: 5px; /* Optional rounded corners */
 }
 
-.terciario a:hover {
-  text-decoration: none; /* Remove underline on hover */
+.terciario .content-container {
+  display: flex; /* Arrange image and text side by side */
+  gap: 20px; /* Space between image and text */
 }
 
 .terciario .text-container {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align text to the top */
-  margin-left: 15px; /* Add space between image and text */
-  text-align: left; /* Ensure proper alignment */
+  flex-direction: column; /* Stack text elements vertically */
 }
+
+.terciario .text-container p {
+  margin: 5px 0; /* Vertical spacing between paragraphs */
+  line-height: 1.5; /* Improved readability */
+  font-size: 16px; /* Standard text size */
+  
+}
+
+.terciario .text-container a {
+  color: rgb(33, 63, 125); /* Blue color for links */
+  text-decoration: underline;
+  font-weight: bold; /* Make links stand out */
+}
+
+.terciario .text-container a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.terciario .text-container p:nth-child(2) {
+  margin-top: 10px; /* Add small space before the second block */
+}
+
+.terciario .text-container p:last-child {
+  margin-top: 15px; /* Extra space above the last paragraph */
+  font-style: italic; /* Italicize for emphasis */
+}
+
+
+
+
 
 /* Fourth Container: Casiopea */
 .casiopea {
