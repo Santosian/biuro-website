@@ -1,16 +1,21 @@
 /* General Reset */
 * {
-  margin: 2;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+* {
+  font-family: 'Times New Roman', serif;
+}
+
+
 /* Body Styling */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Times New Roman', serif !important;
   background-color: #f2f2f2;
   color: black;
-  line-height: 1.5;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,66 +28,80 @@ body {
 /* Page Container */
 .page-container {
   background-color: #ffffff;
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   border-radius: 10px;
   margin: auto;
   overflow-x: hidden;
 }
 
-/* Homepage Text Section */
-.homepage-text {
-  margin: 0;
-  padding: 8px 15px 15px 50px; /* Top, right, bottom, left padding */
-  max-width: 600px;
-  background-color: #ffffff;
-  border: none;
-  text-align: left;
+.custom-homepage-text {
+  margin: 20px auto; /* Centers the text block horizontally */
+  padding: 20px; /* Adds uniform spacing inside the section */
+  max-width: 800px; /* Matches the width of the screenshot */
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark gray text for readability */
+  font-family: 'Times New Roman', serif; /* Font to match the design */
+  font-size: 16px; /* Base font size for paragraphs */
+  line-height: 1.4; /* Improves readability */
+  border: 0px solid #e0e0e0; /* Subtle border around the section */
+  margin-left: 140px;
+
 }
 
-.homepage-text h1 {
-  font-size: 20px;
+.custom-homepage-text h1 {
+  font-size: 24px; /* Larger font for the main heading */
   font-weight: bold;
-  color: #000000;
+  text-align: left; /* Centers the heading */
   margin-bottom: 20px;
+  color: #000; /* Black color for the main heading */
 }
 
-.homepage-text h2 {
-  font-size: 20px;
+.custom-homepage-text h2 {
+  font-size: 20px; /* Slightly smaller font for subheadings */
   font-weight: bold;
-  color: #000000;
-  margin: 20px 0 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333; /* Dark gray subheadings */
 }
 
-.homepage-text p,
-.homepage-text ul li {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #000000;
-  text-align: justify;
-  margin-bottom: 15px;
+.custom-homepage-text p {
+  margin-bottom: 15px; /* Adds spacing between paragraphs */
+  text-align: justify; /* Aligns text to both sides for a cleaner look */
+  margin-right: 160px; /* Aligns the paragraph block to match the title */
+  
 }
 
-.homepage-text ul {
-  list-style-type: disc;
-  margin: 15px 20px;
-  padding-left: 20px;
+.custom-homepage-text ul {
+  margin: 15px 0 15px 20px; /* Adds margin and indent for lists */
+  padding: 0;
+  list-style-type: disc; /* Default bullet points */
 }
 
-.homepage-text a {
-  color: blue;
-  text-decoration: underline;
+.custom-homepage-text ul li {
+  margin-bottom: 10px; /* Spacing between list items */
 }
 
-.homepage-text a:hover {
+.custom-homepage-text a {
+  color: rgb(99, 115, 164); /* Replace this with your desired RGB color */
   text-decoration: none;
-  color: darkblue;
 }
 
-.homepage-text strong {
-  font-weight: bold;
-  color: #000;
+.custom-homepage-text a:hover {
+  text-decoration: underline; /* Adds underline on hover for clarity */
 }
+
+.custom-homepage-text strong {
+  font-weight: bold;
+  color: #000; /* Strong text in black */
+}
+
+.custom-homepage-text h2:last-of-type {
+  text-align: left; /* Centers the final heading */
+  margin-top: 30px;
+  color: #000; /* Black for emphasis */
+}
+
 
 /* Header Styling */
 header {
@@ -91,7 +110,7 @@ header {
 
 /* Blue Text Links */
 .blue-text {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
@@ -117,6 +136,31 @@ body {
   max-width: 900px;
 }
 
+.elcabezal {
+  width: 100%; /* Ensures the header spans the full width */
+  display: flex; /* Flexbox for alignment if needed */
+  justify-content: center; /* Centers the content inside the header */
+  align-items: center; /* Vertically aligns content */
+  background-color: #ffffff; /* Background color for the header */
+  margin: 40px auto; /* Uniform margin around the header */
+  padding: 20px; /* Uniform padding inside the header */
+  border: 0px solid #e0e0e0; /* Subtle border around the header */
+  border-left: 0px solid #e0e0e0; /* Left border */
+  border-right: 0px solid #e0e0e0; /* Right border */
+  border-top: 0px solid transparent; /* Optional: Remove top border */
+  border-bottom: 0px solid transparent; /* Optional: Remove bottom border */
+  box-sizing: border-box; /* Prevent borders from increasing the element's size */
+  
+}
+
+.elcabezal img {
+  width: 90%; /* Image width adjustment for centered alignment */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes extra space below the image */
+  margin: auto; /* Centers the image horizontally and vertically */
+}
+
+
 /* General Container Styling */
 .container {
   font-family: Arial, sans-serif;
@@ -141,58 +185,219 @@ body {
 }
 
 .container a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .container a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
 /* Specific Styling for eluno */
-.eluno img {
-  display: block;
-  margin: 10px auto;
-  max-width: 300px;
-  height: auto;
-  border: 1px solid #ccc;
+
+
+.eluno {
+  display: flex; /* Align text and image side by side */
+  align-items: flex-start; /* Align items to the top */
+  gap: 15px; /* Add spacing between text and image */
+  max-width: 800px; /* Set container width */
+  margin: 50px 20px 10px 140px; /* Top, Right, Bottom, Left */
+  padding: 15px; /* Add internal spacing */
+  background-color: #ffffff; /* Light gray background */
+  border: 1px solid #ffffff; /* Subtle border for the container */
+  font-family: 'Times New Roman', serif; /* Match the font style */
+  color: #000; /* Text color */
+
 }
 
-/* Specific Styling for segundo */
-.segundo .image-grid {
-  display: flex;
-  gap: 10px;
-  margin: 10px 0;
+.eluno img {
+  max-width: 300px; /* Set maximum width for the image */
+  height: auto; /* Maintain image aspect ratio */
+  margin-top: 20px; /* Increase spacing between image and text */
 }
+
+.eluno p {
+  margin: 5px 0; /* Add spacing between paragraphs */
+  
+  line-height: 1.6; /* Improve readability */
+  font-size: 16px; /* Adjust font size */
+}
+
+.eluno a {
+  color: #003399; /* Blue color for links */
+  text-decoration: underline;
+}
+
+.eluno a:hover {
+  text-decoration: none; /* Remove underline on hover */
+
+  
+}
+
+/* Styling for the specific text container */
+.eluno .text-containeree:last-of-type {
+  margin-top: 30px; /* Adjust vertical spacing */
+  padding-left: 23px; /* Adjust horizontal position to the right */
+  text-align: left; /* Adjust text alignment */
+  position: relative; /* Enable relative positioning */
+  left: -62px; /* Move it to the right */
+  top: 25px; /* Move it downwards */
+}
+
+
+
+
+.segundo {
+  display: flex; /* Ensures image and text alignment inside the container */
+  align-items: flex-start; /* Align items at the top */
+  gap: 15px; /* Add spacing between text and image */
+  max-width: 600px; /* Matches the width of eluno */
+  margin: 50px auto 0 0; /* Keeps alignment flexible */
+  padding: 15px; /* Adds internal spacing */
+  background-color: #f0eeef; /* Matches the background of eluno */
+  border: 0px solid #ccc; /* Subtle border for consistency */
+  font-family: 'Times New Roman', serif; /* Matches the font style */
+  color: #000; /* Text color */
+  position: relative; /* Enable fine positioning */
+  right: -310px; /* Adjust value here to move closer to the red line */
+}
+
+
+.segundo img {
+  max-width: 100px; /* Set consistent image size for the grid */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ccc; /* Subtle border for images */
+}
+
+.segundo p {
+  margin: 1.5px 0; /* Controls spacing between paragraphs */
+  line-height: 1.5; /* Adjusts the spacing between lines */
+  font-size: 16px; /* Keeps the font size consistent */
+}
+
+.segundo a {
+  color: #233b7b; /* Blue color for links */
+  text-decoration: underline;
+}
+
+.segundo a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.segundo .image-grid {
+  display: flex; /* Arrange images in a row */
+  justify-content: start; /* Ensure images are aligned to the start */
+  gap: 20px; /* Adjust spacing between images */
+  margin: 15px 0 0 0; /* Add top margin to create vertical spacing */
+  padding: 0; /* Removes padding */
+}
+
 
 .segundo .image-grid img {
-  width: 100px;
-  height: auto;
-  border: 1px solid #ccc;
+  width: 100px; /* Set image width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0; /* Removes extra space around images */
+  border: 1px solid #ccc; /* Optional border */
 }
+
+.segundo .text-container {
+  margin-left: 2px; /* Adjust text spacing to the right */
+  position: relative; /* Enables position adjustments */
+  top: 0; /* Fine-tunes vertical position */
+  left: 0; /* Fine-tunes horizontal position */
+}
+
+
+
+
+
+
 
 /* Specific Styling for terciario */
-.terciario img {
-  display: block;
-  margin: 10px auto;
-  max-width: 300px;
-  height: auto;
-  border: 1px solid #ccc;
+.terciario {
+  display: flex; /* Ensures alignment between text and image */
+  align-items: flex-start; /* Align items at the top */
+  gap: 15px; /* Add spacing between elements */
+  max-width: 600px; /* Matches the width of the image container */
+  margin: 20px auto 0 0; /* Aligns the container */
+  padding: 15px; /* Adds internal spacing */
+  background-color: #f0eeef; /* Light background for contrast */
+  border: 0px solid #ccc; /* Subtle border for clarity */
+  font-family: 'Times New Roman', serif; /* Matches the font style */
+  color: #000; /* Text color */
+  position: relative; /* Enables fine alignment */
+  right: -310px; /* Aligns to the right of 'segundo' */
+  margin-top: 70px
+  
 }
 
+.terciario img {
+  max-width: 300px; /* Adjust to your desired width */
+  width: 100%; /* Ensures responsiveness within the container */
+  height: auto; /* Maintains aspect ratio */
+  border: 1px solid #ccc; /* Optional: Add or adjust the border */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.terciario p {
+  margin: 5px 0; /* Space between paragraphs */
+  line-height: 1.6; /* Improve text readability */
+  font-size: 16px; /* Match font size */
+}
+
+.terciario a {
+  color: #233b7b; /* Blue color for links */
+  text-decoration: underline;
+}
+
+.terciario a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.terciario .image-grid {
+  display: flex; /* Aligns images or keeps them stacked */
+  justify-content: start; /* Aligns to the left */
+  gap: 10px; /* Adds spacing between images (if applicable) */
+  margin: 10px 0 0 0; /* Adjust vertical spacing */
+  padding: 0; /* Removes extra padding */
+}
+
+.terciario .image-grid img {
+  width: 100%; /* Image takes full width of container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0; /* No extra margin */
+  border: 0px solid #ccc; /* Optional border */
+  
+}
+
+.terciario a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.terciario .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text to the top */
+  margin-left: 15px; /* Add space between image and text */
+  text-align: left; /* Ensure proper alignment */
+}
 
 /* Fourth Container: Casiopea */
 .casiopea {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border: 0px solid #ccc; /* Optional border */
+  margin-top: 60px; /* Adjust this value to increase space */
+  
 }
 
 .casiopea-image {
-  width: 120px;
+  width: 600px;
   height: auto;
   margin-bottom: 10px;
+  margin-top: 12px; /* Adjust spacing above the image if needed */
 }
 
 
@@ -235,7 +440,7 @@ footer {
 
 .footer-nav a {
   font-size: 12px;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
   margin: 0 5px;
 }
@@ -406,7 +611,7 @@ footer {
 }
 
 .grid-table a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
@@ -527,14 +732,14 @@ footer {
 .fruta-text-content span,
 .prato-text-content span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .proton-text-content a,
 .fruta-text-content a,
 .prato-text-content a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
@@ -580,12 +785,12 @@ footer {
 
 .freten-text-content span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .freten-text-content a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
@@ -641,21 +846,21 @@ footer {
 .perla-text-content span,
 .agata-text-content span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .fanta-text-content a,
 .perla-text-content a,
 .agata-text-content a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .fanta-text-content a:hover,
 .perla-text-content a:hover,
 .agata-text-content a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -676,7 +881,7 @@ footer {
 .arca-gif-box,
 .merecte-gif-box {
   width: 100%;
-  border: 2px solid #ccc; /* Light gray border */
+  border: 0px solid #ccc; /* Light gray border */
   padding: 10px;
   box-sizing: border-box;
   background-color: #fff; /* White background */
@@ -770,19 +975,19 @@ footer {
 .link-text-content span,
 .zelda-text-content span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .link-text-content a,
 .zelda-text-content a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .link-text-content a:hover,
 .zelda-text-content a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -845,19 +1050,19 @@ footer {
 .procto-text-content span,
 .freroti-text-content span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .procto-text-content a,
 .freroti-text-content a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .procto-text-content a:hover,
 .freroti-text-content a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -914,21 +1119,21 @@ footer {
 .santi-text-content span,
 .ale-text-content span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .aleph-text-content a,
 .santi-text-content a,
 .ale-text-content a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .aleph-text-content a:hover,
 .santi-text-content a:hover,
 .ale-text-content a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -996,12 +1201,12 @@ footer {
 }
 
 .music-table a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .music-table a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1041,16 +1246,16 @@ footer {
 
 .text-content span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
 }
 
 .text-content a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .text-content a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1204,17 +1409,17 @@ footer {
 
 .ejecta-text-content span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .ejecta-text-content a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .ejecta-text-content a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1278,16 +1483,16 @@ footer {
 
 .wret-text-content span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
 }
 
 .wret-text-content a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .wret-text-content a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1363,16 +1568,16 @@ footer {
 }
 
 .image-container-botas .text-botas strong {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
 }
 
 .image-container-botas .text-botas a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .image-container-botas .text-botas a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1461,7 +1666,7 @@ footer {
 
 /* Links and Hover Effects */
 .video-details a {
-  color: #0066c0;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1526,7 +1731,7 @@ footer {
 .pruspecto-text-content a,
 .lampar-text-content a,
 .citerna-text-content a{
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
@@ -1578,19 +1783,19 @@ footer {
 .image-container .archio-text span,
 .image-container .velo-text span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .image-container .archio-text a,
 .image-container .velo-text a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .image-container .archio-text a:hover,
 .image-container .velo-text a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1636,7 +1841,7 @@ footer {
 }
 
 .image-container-thong .image-details .author {
-  color: #0066c0; /* Blue text for the author */
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
 }
 
 /* Ventri Image Container */
@@ -1694,16 +1899,16 @@ footer {
 
 .container.olivia span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
 }
 
 .container.olivia a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .container.olivia a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1760,16 +1965,16 @@ footer {
 
 .pluti-container span, .boots-container span, .meli-container span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
 }
 
 .pluti-container a, .boots-container a, .meli-container a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .pluti-container a:hover, .boots-container a:hover, .meli-container a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1825,16 +2030,16 @@ footer {
 
 .reten-container span {
   font-weight: bold;
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
 }
 
 .reten-container a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .reten-container a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
@@ -1928,12 +2133,12 @@ footer {
 }
 
 .music-table-2 a {
-  color: blue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: underline;
 }
 
 .music-table-2 a:hover {
-  color: darkblue;
+  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
   text-decoration: none;
 }
 
