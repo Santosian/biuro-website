@@ -313,24 +313,18 @@ body {
 }
 
 .terciario {
-  display: flex;
-  flex-direction: column; /* Stack title and content vertically */
-  max-width: 800px; /* Limit the container width */
-  margin: 50px auto 50px 112px; /* Adjust left margin (last value) to move right */
+  display: block; /* Use block layout for better control */
+  max-width: 700px; /* Limit the container width */
+  margin: 70px 0 30px 211px; /* top right bottom left*/
   padding: 15px; /* Add internal spacing */
   background-color: #f0eeef; /* Light gray background */
-  border: 0px solid #ccc; /* Subtle border */
   font-family: 'Times New Roman', serif; /* Match the font style */
   color: #000; /* Text color */
 }
 
 .terciario .title-container {
-  margin-bottom: 15px; /* Add space between title and image */
+  margin-bottom: 10px; /* Space between the title and the content */
   font-size: 16px; /* Font size for title text */
-}
-
-.terciario .title-container p {
-  margin: 0; /* Remove extra spacing */
   line-height: 1.4; /* Improve readability */
 }
 
@@ -345,36 +339,31 @@ body {
 }
 
 .terciario .content-container {
-  display: flex; /* Align image and text side by side */
-  align-items: flex-start; /* Align content at the top */
-  gap: 0px; /* Space between image and text */
+  display: block; /* Use block layout */
 }
 
 .terciario img {
-  max-width: 120px; /* Set a consistent image width */
+  float: left; /* Float the image to the left */
+  margin-right: 15px; /* Space between image and text */
+  max-width: 120px; /* Set consistent image width */
   height: auto; /* Maintain aspect ratio */
   border: 1px solid #ccc; /* Thin border around the image */
-  border-radius: 5px; /* Optional rounded corners */
-  padding: 0; /* Ensure no padding around the image */
 }
 
 .terciario .text-container {
-  display: flex;
-  flex-direction: column; /* Stack text vertically */
-  justify-content: flex-start; /* Align text to the top */
-  margin: 0; /* Remove any margin around the text */
-  padding: 0; /* Ensure no extra padding */
+  overflow: hidden; /* Clear the float */
+  font-size: 16px; /* Standard text size */
+  line-height: 1.6; /* Improved readability */
+  margin-top: 10px; /* Adjust vertical spacing as needed */
 }
 
 .terciario .text-container p {
-  margin: 5px 0; /* Vertical spacing between paragraphs */
-  line-height: 1.5; /* Improved readability */
-  font-size: 16px; /* Standard text size */
+  margin: 0 0 10px 0; /* Space between paragraphs */
 }
 
 .terciario .text-container p:last-child {
   margin-top: 10px; /* Add space before the last paragraph */
-  font-style: italic; /* Optional emphasis */
+  font-style: italic; /* Italicize the final message */
 }
 
 .terciario .text-container a {
@@ -385,8 +374,6 @@ body {
 .terciario .text-container a:hover {
   text-decoration: none; /* Remove underline on hover */
 }
-
-
 
 
 
