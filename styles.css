@@ -348,12 +348,13 @@ body {
   max-width: 120px; /* Set consistent image width */
   height: auto; /* Maintain aspect ratio */
   border: 1px solid #ccc; /* Thin border around the image */
+  margin-left: -35px; /* Push the image right */
 }
 
 .terciario .text-container {
   overflow: hidden; /* Clear the float */
   font-size: 16px; /* Standard text size */
-  line-height: 1.6; /* Improved readability */
+  line-height: 1.3; /* Improved readability */
   margin-top: 10px; /* Adjust vertical spacing as needed */
 }
 
@@ -392,6 +393,28 @@ body {
   height: auto;
   margin-bottom: 10px;
   margin-top: 12px; /* Adjust spacing above the image if needed */
+}
+
+/* Fourth Container for Favorite Words Image Container */
+
+.image-container.favorite-words {
+  position: relative; /* Relative positioning to keep it visible */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: flex-end; /* Push the image to the right */
+  margin-top: 20px; /* Add some vertical spacing if needed */
+  width: 100%; /* Ensure it spans the full width of the parent container */
+  background-color: transparent; /* Remove any background color */
+  margin-right: 20px; /* Move the image 20px away from the right edge */
+  border: none; /* Ensure no border is present */
+}
+
+.image-container.favorite-words img {
+  max-width: 500px; /* Limit the image width */
+  height: auto; /* Maintain aspect ratio */
+  border: none; /* Remove any borders */
+  border-radius: 0; /* Ensure no rounded corners */
+  margin-left: 0px; /* Push the image 20px to the right */
+  margin-right: 30px; /* Optional: Reset right margin */
 }
 
 
@@ -651,25 +674,6 @@ footer {
   width: 100%; /* Scale the GIF to fit the container */
   height: 100%; /* Maintain height scaling */
   object-fit: cover; /* Ensure the GIF fits perfectly */
-}
-
-/* Specific Styling for Favorite Words Image Container */
-.image-container.favorite-words {
-  position: relative; /* Relative positioning to keep it visible */
-  display: flex; /* Use flexbox for alignment */
-  justify-content: flex-end; /* Push the image to the right */
-  margin-top: 20px; /* Add some vertical spacing if needed */
-  width: 100%; /* Ensure it spans the full width of the parent container */
-  background-color: transparent; /* Remove any background color */
-  margin-right: 20px; /* Move the image 20px away from the right edge */
-  border: none; /* Ensure no border is present */
-}
-
-.image-container.favorite-words img {
-  max-width: 500px; /* Limit the image width */
-  height: auto; /* Maintain aspect ratio */
-  border: none; /* Remove any borders */
-  border-radius: 0; /* Ensure no rounded corners */
 }
 
 /* General Second Row Styling */
