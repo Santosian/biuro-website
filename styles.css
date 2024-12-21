@@ -587,6 +587,7 @@ footer {
 
 /* Table 11111 Styling */
 
+
 .grid-table {
   width: 90%;
   margin: 20px auto;
@@ -599,7 +600,13 @@ footer {
 
 }
 
-
+.grid-table ~ div:first-of-type p {
+  text-align: center; /* Align text */
+  font-size: 25px; /* Adjust font size */
+  color: #333; /* Change text color */
+  margin-bottom: 20px; /* Add spacing between text and grid */
+  line-height: 1.5; /* Adjust line spacing */
+}
 .grid-table thead th {
   background-color: #9d9d9f;
   color: #ffffff;
@@ -647,12 +654,13 @@ footer {
 }
 
 .grid-table td:nth-child(2) {
+  width: 150px; /* Set the width for the second column */
   width: 25%;
   text-align: center;
 }
 
 .grid-table td:nth-child(3) {
-  width: 60%;
+  width: 40%;
 }
 
 /* Align text to the right of the image */
@@ -706,182 +714,56 @@ footer {
   margin: 20px auto;
 }
 
-/* Proton Image Container */
-.proton-image-container,
-.fruta-image-container,
-.prato-image-container {
-  display: flex;
-  align-items: flex-start; /* Align text and image at the top */
-  gap: 20px; /* Space between image and text */
-  background-color: #f9f9f9;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
+/* Base style for all containers */
+.proton, .fruta, .prato, .freten, .fanta, .perla, .agata {
+  display: flex; /* Align text and image side by side */
+  align-items: flex-start; /* Align items to the top */
+  gap: 15px; /* Add spacing between text and image */
+  max-width: 800px; /* Set container width */
+  margin: 50px 20px 10px 140px; /* Top, Right, Bottom, Left */
+  padding: 15px; /* Add internal spacing */
+  background-color: #ffffff; /* Light gray background */
+  border: 1px solid #ffffff; /* Subtle border for the container */
+  font-family: 'Times New Roman', serif; /* Match the font style */
+  color: #000; /* Text color */
 }
 
-/* Proton and Fruta Image */
-.proton-image-container img,
-.fruta-image-container img,
-.prato-image-container img {
-  max-width: 200px; /* Adjust image width */
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.proton img, .fruta img, .prato img, .freten img, .fanta img, .perla img, .agata img {
+  max-width: 300px; /* Set maximum width for the image */
+  height: auto; /* Maintain image aspect ratio */
+  margin-top: 20px; /* Increase spacing between image and text */
 }
 
-/* Proton and Fruta Text Content */
-.proton-text-content,
-.fruta-text-content,
-.prato-text-content {
-  flex: 1; /* Allow text to expand */
+.proton p, .fruta p, .prato p, .freten p, .fanta p, .perla p, .agata p {
+  margin: 5px 0; /* Add spacing between paragraphs */
+  line-height: 1.6; /* Improve readability */
+  font-size: 16px; /* Adjust font size */
 }
 
-.proton-text-content p,
-.fruta-text-content p,
-.prato-text-content p {
-  margin: 0 0 8px; /* Spacing between text */
-  font-size: 13px;
-}
-
-.proton-text-content span,
-.fruta-text-content span,
-.prato-text-content span {
-  font-weight: bold;
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
+.proton a, .fruta a, .prato a, .freten a, .fanta a, .perla a, .agata a {
+  color: #003399; /* Blue color for links */
   text-decoration: underline;
 }
 
-.proton-text-content a,
-.fruta-text-content a,
-.prato-text-content a {
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
+.proton a:hover, .fruta a:hover, .prato a:hover, .freten a:hover, .fanta a:hover, .perla a:hover, .agata a:hover {
+  text-decoration: none; /* Remove underline on hover */
 }
 
-.proton-text-content a:hover,
-.fruta-text-content a:hover,
-.prato-text-content a:hover {
-  color: darkblue;
-  text-decoration: none;
+.proton .text-containeree:last-of-type,
+.fruta .text-containeree:last-of-type,
+.prato .text-containeree:last-of-type,
+.freten .text-containeree:last-of-type,
+.fanta .text-containeree:last-of-type,
+.perla .text-containeree:last-of-type,
+.agata .text-containeree:last-of-type {
+  margin-top: 30px; /* Adjust vertical spacing */
+  padding-left: 23px; /* Adjust horizontal position to the right */
+  text-align: left; /* Adjust text alignment */
+  position: relative; /* Enable relative positioning */
+  left: -62px; /* Move it to the right */
+  top: 25px; /* Move it downwards */
 }
 
-/* Freten Image Container */
-.freten-image-container {
-  display: flex;
-  align-items: flex-start; /* Align text and image at the top */
-  gap: 20px; /* Space between image and text */
-  background-color: #f9f9f9;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
-  margin: 40px auto 0; /* Adds space above and centers it */
-  max-width: 90%; /* Matches the width of previous containers */
-}
-
-.freten-image-container img {
-  max-width: 200px; /* Adjust image width */
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.freten-text-content {
-  flex: 1; /* Allow text to expand */
-}
-
-.freten-text-content p {
-  margin: 0 0 8px; /* Spacing between text */
-  font-size: 13px;
-}
-
-.freten-text-content span {
-  font-weight: bold;
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
-}
-
-.freten-text-content a {
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
-}
-
-.freten-text-content a:hover {
-  color: darkblue;
-  text-decoration: none;
-}
-
-/* General Container Styling */
-.fanta-image-container,
-.perla-image-container,
-.agata-image-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
-  margin: 40px auto 0;
-  max-width: 90%;
-}
-
-/* Image Styling */
-.fanta-image-container img,
-.perla-image-container img,
-.agata-image-container img {
-  max-width: 200px;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Text Content Styling */
-.fanta-text-content,
-.perla-text-content,
-.agata-text-content {
-  flex: 1;
-}
-
-.fanta-text-content p,
-.perla-text-content p,
-.agata-text-content p {
-  margin: 0 0 8px;
-  font-size: 13px;
-}
-
-.fanta-text-content span,
-.perla-text-content span,
-.agata-text-content span {
-  font-weight: bold;
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
-}
-
-.fanta-text-content a,
-.perla-text-content a,
-.agata-text-content a {
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
-}
-
-.fanta-text-content a:hover,
-.perla-text-content a:hover,
-.agata-text-content a:hover {
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: none;
-}
 
 /* Arca GIF Container */
 .arca-gif-container,
