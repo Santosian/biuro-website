@@ -46,63 +46,86 @@ body {
   line-height: 1.4; /* Improves readability */
   border: 0px solid #e0e0e0; /* Subtle border around the section */
   margin-left: 140px;
-
-  
-
 }
 
 .custom-homepage-text h1 {
   font-size: 24px; /* Larger font for the main heading */
   font-weight: bold;
-  text-align: left; /* Centers the heading */
+  text-align: left;
   margin-bottom: 20px;
-  color: #000; /* Black color for the main heading */
+  color: #000;
 }
 
 .custom-homepage-text h2 {
-  font-size: 20px; /* Slightly smaller font for subheadings */
+  font-size: 20px;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #333; /* Dark gray subheadings */
+  color: #333;
 }
 
 .custom-homepage-text p {
-  margin-bottom: 15px; /* Adds spacing between paragraphs */
-  text-align: justify; /* Aligns text to both sides for a cleaner look */
-  margin-right: 160px; /* Aligns the paragraph block to match the title */
-  
+  margin-bottom: 15px;
+  text-align: justify;
+  margin-right: 160px;
 }
 
 .custom-homepage-text ul {
-  margin: 15px 0 15px 20px; /* Adds margin and indent for lists */
+  margin: 15px 0 15px 20px;
   padding: 0;
-  list-style-type: disc; /* Default bullet points */
+  list-style-type: disc;
 }
 
 .custom-homepage-text ul li {
-  margin-bottom: 10px; /* Spacing between list items */
+  margin-bottom: 10px;
 }
 
 .custom-homepage-text a {
-  color: rgb(99, 115, 164); /* Replace this with your desired RGB color */
+  color: rgb(99, 115, 164);
   text-decoration: none;
 }
 
 .custom-homepage-text a:hover {
-  text-decoration: underline; /* Adds underline on hover for clarity */
+  text-decoration: underline;
 }
 
 .custom-homepage-text strong {
   font-weight: bold;
-  color: #000; /* Strong text in black */
+  color: #000;
 }
 
 .custom-homepage-text h2:last-of-type {
-  text-align: left; /* Centers the final heading */
+  text-align: left;
   margin-top: 30px;
-  color: #000; /* Black for emphasis */
+  color: #000;
 }
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .custom-homepage-text {
+    margin-left: 20px; /* Reduce the margin for smaller screens */
+    margin-right: 20px; /* Ensure consistent spacing on both sides */
+    max-width: 100%; /* Allow the section to take full width */
+  }
+
+  .custom-homepage-text p {
+    margin-right: 0; /* Remove extra right margin */
+    font-size: 14px; /* Slightly smaller font for readability on small screens */
+  }
+
+  .custom-homepage-text h1 {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  .custom-homepage-text h2 {
+    font-size: 18px; /* Adjust subheading size */
+  }
+
+  .custom-homepage-text ul {
+    margin-left: 15px; /* Reduce left margin for lists */
+  }
+}
+
 
 
 /* Header Styling for Girls Links Section */
