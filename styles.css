@@ -614,6 +614,7 @@ footer {
   margin-right: auto; /* Center the table horizontally */
   clip-path: inset(0 0px 0 0); /* Crop edges if necessary */
   margin-left: 150px; /* Adjust this value to move it further right */
+  
 }
 
 .grid-table thead th {
@@ -653,12 +654,36 @@ footer {
   width: 35%; /* Adjust column width */
 }
 
+/* Target hyperlinks in the third column of the grid */
+.grid-table td:nth-child(3) a {
+  color: #1e3a7c; /* Your desired blue color */
+  text-decoration: underline; /* Optional: ensure links are underlined */
+}
+
+/* Visited links in the third column */
+.grid-table td:nth-child(3) a:visited {
+  color: #003399; /* Customize for visited links */
+}
+
+/* Hover effect for interactivity */
+.grid-table td:nth-child(3) a:hover {
+  color: #0066cc; /* Customize hover color */
+  text-decoration: none; /* Optional: remove underline on hover */
+}
+
+/* Active state (while clicking) */
+.grid-table td:nth-child(3) a:active {
+  color: #004080; /* Customize active link color */
+}
+
+
 /* Adjust text in other columns */
 .grid-table td:nth-child(1) {
   width: 8%;
   color: #666;
   font-size: 11px; /* Make text smaller */
 }
+
 
 
 /* Flex container for grid and GIF */
