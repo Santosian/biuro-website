@@ -728,7 +728,7 @@ footer {
   max-width: 800px; /* Set container width */
   margin: 50px 20px 10px 140px; /* Top, Right, Bottom, Left */
   padding: 15px; /* Add internal spacing */
-  background-color: #ffffff; /* Light gray background */
+  background-color: #f0eeef; /* Light gray background */
   border: 1px solid #ffffff; /* Subtle border for the container */
   font-family: 'Times New Roman', serif; /* Match the font style */
   color: #000; /* Text color */
