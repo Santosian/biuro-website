@@ -105,10 +105,27 @@ body {
 }
 
 
-/* Header Styling */
-header {
-  margin-bottom: 10px;
+/* Header Styling for Girls Links Section */
+.header {
+
+  padding: 15px; /* Space around the text */
+  margin: 20px auto; /* Space above and below, centered */
+  text-align: center; /* Align text in the center */
+  font-family: 'Times New Roman', Times, serif, sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Makes the text bold */
+  color: #333; /* Text color */
+  border: 0px solid #0c33cf; /* Border color and thickness */
+  border-bottom: none; /* Removes the line if it's caused by a border */
+  border-radius: 0px; /* Rounded corners */
+  box-shadow: none;
+  max-width: 90%; /* Restricts the width of the container */
+  width: auto; /* Automatically adjusts width */
+  background-color: white !important; /* Sets background to white and forces it */
+
+
 }
+
 
 /* Blue Text Links */
 .blue-text {
@@ -587,99 +604,61 @@ footer {
 
 /* Table 11111 Styling */
 
-
 .grid-table {
-  width: 90%;
-  margin: 20px auto;
+  width: 60%; /* Reduce the grid's overall width */
+  margin: 20px 0;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 12px; /* Reduce font size for text */
   background-color: white;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  margin-right: 100px; /* Adjust this value to move the grid to the right */
-  clip-path: inset(0 0px 0 0); /* Crop 50px from the right */
-
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); /* Adjust shadow for subtle effect */
+  margin-right: auto; /* Center the table horizontally */
+  clip-path: inset(0 0px 0 0); /* Crop edges if necessary */
+  margin-left: 150px; /* Adjust this value to move it further right */
 }
 
-.grid-table ~ div:first-of-type p {
-  text-align: center; /* Align text */
-  font-size: 25px; /* Adjust font size */
-  color: #333; /* Change text color */
-  margin-bottom: 20px; /* Add spacing between text and grid */
-  line-height: 1.5; /* Adjust line spacing */
-}
 .grid-table thead th {
   background-color: #9d9d9f;
   color: #ffffff;
   text-align: left;
-  padding: 10px;
-  border: 4px solid #ffffff;
+  padding: 5px; /* Reduce padding in table headers */
+  border: 3px solid #ffffff; /* Reduce border thickness */
 }
 
 .grid-table tbody td {
-  border: 4px solid #ffffff;
-  padding: 10px;
+  border: 3px solid #ffffff; /* Reduce border thickness */
+  padding: 8px; /* Reduce padding for table cells */
   vertical-align: top;
   text-align: left;
-}
-
-.grid-table tbody tr:nth-child(even) {
-  background-color: #f1f1f3;
-}
-
-.grid-table tbody tr:nth-child(odd) {
-  background-color: #f1f1f3;
+  padding: 5px; /* Reduce padding in table headers */
 }
 
 .grid-table img {
-  width: 80px;
-  height: 100px;
+  width: 60px; /* Smaller images */
+  height: 80px; /* Proportional height */
   object-fit: cover;
   border: 1px solid #ccc;
   margin-bottom: 5px;
 }
 
-.grid-table a {
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
-}
-
-.grid-table a:hover {
-  color: darkblue;
-}
-
-.grid-table td:nth-child(1) {
-  width: 10%;
-  color: #666;
-  font-size: 12px;
-}
-
 .grid-table td:nth-child(2) {
-  width: 150px; /* Set the width for the second column */
-  width: 25%;
-  text-align: center;
-}
-
-.grid-table td:nth-child(3) {
-  width: 40%;
-}
-
-/* Align text to the right of the image */
-.grid-table td:nth-child(2) {
+  width: 25%; /* Adjust column width */
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px; /* Adjust spacing between image and text */
+  gap: 5px; /* Reduce gap between image and text */
   text-align: left;
 }
 
-.grid-table td:nth-child(2) img {
-  flex-shrink: 0; /* Prevent the image from resizing */
+.grid-table td:nth-child(3) {
+  width: 35%; /* Adjust column width */
 }
 
-.grid-table td:nth-child(2) br {
-  display: none; /* Remove unnecessary line breaks */
+/* Adjust text in other columns */
+.grid-table td:nth-child(1) {
+  width: 8%;
+  color: #666;
+  font-size: 11px; /* Make text smaller */
 }
-
 
 
 /* Flex container for grid and GIF */
@@ -713,6 +692,8 @@ footer {
   width: 90%;
   margin: 20px auto;
 }
+
+
 
 /* Base style for all containers */
 .proton, .fruta, .prato, .freten, .fanta, .perla, .agata {
@@ -821,151 +802,113 @@ footer {
   color: #000; /* Black text */
 }
 
-/* General Styling for Link and Zelda Containers */
-.link-image-container,
-.zelda-image-container {
+/* Containers généraux */
+.link-container,
+.zelda-container {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  gap: 20px; /* Space between image(s) and text */
-  background-color: #f9f9f9;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 40px auto;
-  max-width: 90%;
-  font-family: Arial, sans-serif;
+  gap: 20px; /* Espace entre texte et image */
+  margin: 20px auto; /* Centrage horizontal */
+  padding: 15px; /* Espace interne */
+  border: 0px solid #ccc; /* Bordure fine */
+  border-radius: 0px; /* Coins arrondis */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  background-color: #f0eeef; /* Couleur d'arrière-plan */
+  width: 80%; /* Largeur ajustée */
 }
 
-/* Link Container: Dual Images */
-.link-images {
-  display: flex;
-  gap: 10px; /* Space between two images */
+/* Images dans les containers */
+.link-container img,
+.zelda-container img {
+  width: 150px; /* Largeur des images */
+  height: auto; /* Ratio respecté */
+  border-radius: 0px; /* Coins légèrement arrondis */
+  object-fit: cover; /* Ajustement parfait */
 }
 
-.link-images img {
-  width: 120px; /* Set image size */
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+/* Texte à côté des images */
+.link-container .text-content,
+.zelda-container .text-content {
+  flex: 1; /* Prend l'espace restant */
+  font-size: 14px; /* Taille du texte */
+  line-height: 1.5; /* Espacement entre les lignes */
+  color: #333; /* Couleur du texte */
 }
 
-/* Zelda Container: Single Image */
-.zelda-image img {
-  width: 200px; /* Larger size for single image */
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+/* Liens */
+.link-container .text-content a,
+.zelda-container .text-content a {
+  color: #0066cc; /* Couleur des liens */
+  text-decoration: none; /* Pas de soulignement */
 }
 
-/* Text Content Styling */
-.link-text-content,
-.zelda-text-content {
-  flex: 1; /* Allow text to take remaining space */
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
-}
-
-.link-text-content p,
-.zelda-text-content p {
-  margin: 0 0 8px; /* Space between paragraphs */
-}
-
-.link-text-content span,
-.zelda-text-content span {
-  font-weight: bold;
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
-}
-
-.link-text-content a,
-.zelda-text-content a {
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
-}
-
-.link-text-content a:hover,
-.zelda-text-content a:hover {
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: none;
-}
-
-/* Sintra Image Container */
-.sintra-image-container {
-  width: 100%; /* Full width of the white page */
-  margin: 0; /* Remove any margins */
-  padding: 0; /* Remove any padding */
-  box-sizing: border-box; /* Ensure no extra space due to borders/padding */
-  overflow: hidden; /* Ensures nothing spills out */
-}
-
-.sintra-image-container img {
-  width: 100%; /* Image spans entire width of container */
-  height: auto; /* Maintain image aspect ratio */
-  display: block; /* Removes any extra space below the image */
-  margin: 0; /* No margins */
-  border: none; /* No borders */
+.link-container .text-content a:hover,
+.zelda-container .text-content a:hover {
+  text-decoration: underline; /* Soulignement au survol */
 }
 
 
-/* General Styling for Procto and Freroti Containers */
-.procto-image-container,
-.freroti-image-container {
+
+
+/* General Container Styling */
+.procto-container,
+.freroti-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #f9f9f9; /* White container */
+  background-color: #f9f9f9;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 40px auto;
-  max-width: 90%; /* Respect white page area */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 80%;
+  font-family: Arial, sans-serif;
+}
+
+/* Text Content Styling */
+.procto-text,
+.freroti-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px; /* Spacing between text and image */
+}
+
+.procto-text p,
+.freroti-text p {
+  margin: 0 0 8px; /* Space between paragraphs */
+}
+
+.procto-text span,
+.freroti-text span {
+  font-weight: bold;
+  color: #1e3a7c; /* Match the Biuro branding */
+  text-decoration: underline;
+}
+
+.procto-text a,
+.freroti-text a {
+  color: #1e3a7c;
+  text-decoration: underline;
+}
+
+.procto-text a:hover,
+.freroti-text a:hover {
+  text-decoration: none;
 }
 
 /* Image Styling */
 .procto-image img,
 .freroti-image img {
-  width: 50%; /* Make image responsive */
+  width: 100%;
+  max-width: 500px; /* Ensure images do not exceed container width */
   height: auto;
-  margin-top: 10px; /* Space between text and image */
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
-/* Text Content Styling */
-.procto-text-content,
-.freroti-text-content {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
-}
-
-.procto-text-content p,
-.freroti-text-content p {
-  margin: 0 0 8px;
-}
-
-.procto-text-content span,
-.freroti-text-content span {
-  font-weight: bold;
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
-}
-
-.procto-text-content a,
-.freroti-text-content a {
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: underline;
-}
-
-.procto-text-content a:hover,
-.freroti-text-content a:hover {
-  color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
-  text-decoration: none;
-}
 
 /* General Styling for Aleph, Santi, and Ale Containers */
 .aleph-image-container,
