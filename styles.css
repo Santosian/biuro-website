@@ -128,28 +128,6 @@ body {
 
 
 
-/* Header Styling for Girls Links Section */
-.header {
-
-  padding: 15px; /* Space around the text */
-  margin: 20px auto; /* Space above and below, centered */
-  text-align: center; /* Align text in the center */
-  font-family: 'Times New Roman', Times, serif, sans-serif; /* Font family */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Makes the text bold */
-  color: #333; /* Text color */
-  border: 0px solid #0c33cf; /* Border color and thickness */
-  border-bottom: none; /* Removes the line if it's caused by a border */
-  border-radius: 0px; /* Rounded corners */
-  box-shadow: none;
-  max-width: 90%; /* Restricts the width of the container */
-  width: auto; /* Automatically adjusts width */
-  background-color: white !important; /* Sets background to white and forces it */
-
-
-}
-
-
 /* Blue Text Links */
 .blue-text {
   color: rgb(30, 58, 124); /* Replace this with your desired RGB color */
@@ -459,29 +437,28 @@ body {
 
 
 
-/* Photo Mosaic */
-.photo-mosaic {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  max-width: 400px;
-  margin: 20px auto;
-  background-color: #d0d0d0;
-  padding: 20px;
+.dogs-container {
+  display: flex; /* Enables flexbox layout to arrange child elements. */
+  justify-content: flex-start; /* Aligns the image to the left of the container. */
+  align-items: center; /* Centers the image vertically within the container. */
+  margin-top: 20px; /* Adds space only to the top of the container. */
+  margin-left: 55px; /* No margin on the left. */
+  margin-right: 0; /* No margin on the right. */
+  margin-bottom: 0; /* No margin on the bottom. */
+  padding: 10px; /* Adds inner space between the container's border and content. */
+  max-width: 100%; /* Prevents the container from exceeding the screen width. */
+  background-color: hsl(0, 0%, 100%); /* Optional: Adjust background color if needed. */
 }
 
-.photo img {
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.dogs-container img {
+  width: 600px; /* Reduces the image size. Adjust as needed. */
+  height: auto; /* Maintains the image's aspect ratio. */
+  display: block; /* Ensures the image behaves like a block element. */
+  border: 0px solid #ccc; /* Adds a border around the image. */
+  cursor: pointer; /* Changes the cursor to indicate the image is clickable. */
 }
 
-.photo p {
-  font-size: 12px;
-  color: blue;
-  text-decoration: underline;
-  margin-top: 5px;
-}
+
 
 /* Footer Styling */
 footer {
@@ -628,11 +605,11 @@ footer {
 /* Table 11111 Styling */
 
 .grid-table {
-  width: 60%; /* Reduce the grid's overall width */
-  margin: 20px 0;
+  width: 55%; /* Reduce the grid's overall width */
+  margin: 10px 0;
   border-collapse: collapse;
-  font-size: 12px; /* Reduce font size for text */
-  background-color: white;
+  font-size: 14px; /* Reduce font size for text */
+  background-color: #f1f1f1;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); /* Adjust shadow for subtle effect */
   margin-right: auto; /* Center the table horizontally */
   clip-path: inset(0 0px 0 0); /* Crop edges if necessary */
